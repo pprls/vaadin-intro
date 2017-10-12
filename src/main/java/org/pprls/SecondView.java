@@ -6,6 +6,10 @@ import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import com.vaadin.ui.declarative.Design;
+import org.pprls.client.PerformanceBondClient;
+import org.pprls.model.PerformanceBondDto;
+
+import java.util.List;
 
 @DesignRoot
 public class SecondView extends Panel implements View {
@@ -28,6 +32,11 @@ public class SecondView extends Panel implements View {
 
     @Subscribe
     public void arbitraryNambedMethod1(final MyEvent.FirstButtonEvent event) {
+        PerformanceBondClient client = new PerformanceBondClient();
+
+        PerformanceBondDto dto = new PerformanceBondDto();
+        dto.setName(event.getText());
+        PerformanceBondDto updatedDto = client.save(dto);
         label.setValue(event.getText());
     }
 
