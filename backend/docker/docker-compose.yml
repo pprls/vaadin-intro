@@ -1,0 +1,18 @@
+version: "3"
+services:
+  postgres:
+    build: 
+      context: .
+      dockerfile: Dockerfile-postgres
+    image: postgres
+    environment: 
+      POSTGRES_USER: oef
+      POSTGRES_PASSWORD: oef
+    ports:
+      - "5432:5432"
+  oef:
+    build: 
+      context: .
+      dockerfile: Dockerfile-springboot    
+    ports:
+      - "8080:8080"
