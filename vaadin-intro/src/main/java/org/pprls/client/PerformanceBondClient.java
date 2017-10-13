@@ -1,14 +1,12 @@
 package org.pprls.client;
 
 import com.google.gson.Gson;
-import org.glassfish.jersey.client.ClientResponse;
-import org.pprls.model.PerformanceBondDto;
+import org.pprls.domain.PerformanceBondDto;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
 import java.util.List;
 
 public class PerformanceBondClient {

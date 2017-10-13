@@ -7,9 +7,7 @@ import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import com.vaadin.ui.declarative.Design;
 import org.pprls.client.PerformanceBondClient;
-import org.pprls.model.PerformanceBondDto;
-
-import java.util.List;
+import org.pprls.domain.PerformanceBondDto;
 
 @DesignRoot
 public class SecondView extends Panel implements View {

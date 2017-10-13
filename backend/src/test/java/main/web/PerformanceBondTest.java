@@ -22,7 +22,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 @RunWith(SpringRunner.class)
 @EnableJpaRepositories(basePackageClasses = PersonRepository.class, basePackages = {"main.service.repository"})
-@ComponentScan(basePackages = {"main.web" ,"main.model"})
+@ComponentScan(basePackages = {"main.web" ,"main.domain"})
 @PropertySource("classpath:application.properties")
 //@WebMvcTest(PerformanceBondResource.class)
 @SpringBootTest
@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @DataJpaTest
 //@AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
 
-//@ComponentScan(basePackages = {"web" ,"main.model"})
+//@ComponentScan(basePackages = {"web" ,"main.domain"})
 public class PerformanceBondTest {
     @Autowired
     private MockMvc mockMvc;

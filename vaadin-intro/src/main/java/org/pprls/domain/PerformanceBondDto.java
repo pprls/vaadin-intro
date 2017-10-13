@@ -1,4 +1,4 @@
-package org.pprls.model;
+package org.pprls.domain;
 import java.util.UUID;
 
 public class PerformanceBondDto {
