@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oef.iml" filepath="$PROJECT_DIR$/oef.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vaadin-intro.iml" filepath="$PROJECT_DIR$/vaadin-intro.iml" />
       <module fileurl="file://$PROJECT_DIR$/frontend/vaadin-intro.iml" filepath="$PROJECT_DIR$/frontend/vaadin-intro.iml" />
     </modules>
   </component>
