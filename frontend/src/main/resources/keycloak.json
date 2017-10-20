@@ -1,0 +1,9 @@
+{
+  "realm": "opekepe",
+  "auth-server-url": "http://172.29.117.2:8080/auth",
+  "ssl-required": "external",
+  "resource": "oef",
+  "public-client": true
+  "enable-cors": true,
+  "cors-max-age": 1000
+}

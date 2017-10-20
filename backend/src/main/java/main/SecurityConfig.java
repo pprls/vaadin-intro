@@ -37,7 +37,7 @@ public class SecurityConfig extends KeycloakWebSecurityConfigurerAdapter {
         super.configure(http);
         http
                 .authorizeRequests()
-                .antMatchers("/PerformanceBond*").hasRole("user")
+                .antMatchers("/PerformanceBond").hasRole("user")
                 .anyRequest().permitAll();
     }
 }
