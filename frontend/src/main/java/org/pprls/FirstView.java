@@ -6,7 +6,6 @@ import com.vaadin.navigator.View;
 import com.vaadin.navigator.ViewChangeListener;
 import com.vaadin.ui.*;
 import com.vaadin.ui.declarative.Design;
-import org.pprls.client.AuthClient;
 import org.pprls.client.PerformanceBondClient;
 import org.pprls.domain.PerformanceBondDto;
 
@@ -32,10 +31,9 @@ public class FirstView extends Panel implements View {
 
     @Subscribe
     public void arbitraryNambedMethod2(final MyEvent.SecondButtonEvent event) {
-       // PerformanceBondClient client = new PerformanceBondClient();
+        PerformanceBondClient client = new PerformanceBondClient();
 
-        //List<PerformanceBondDto> dtos = client.findByName(event.getText());
-        AuthClient client = new AuthClient();
+        List<PerformanceBondDto> dtos = client.findByName(event.getText());
 
         label.setValue(event.getText());
     }
